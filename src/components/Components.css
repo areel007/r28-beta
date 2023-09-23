@@ -1,0 +1,13 @@
+.dropdown {
+  position: absolute;
+  top: 100%;
+  visibility: hidden;
+  transition: all .1s ease;
+  transform: translateY(10px);
+}
+
+.menu:hover  .dropdown {
+  visibility: visible;
+  transition: all .6s ease;
+  transform: translateY(0);
+}
