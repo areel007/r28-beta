@@ -17,6 +17,7 @@ import SirKesington from "./pages/Leadership/SirKesington";
 import Adebisi from "./pages/Leadership/Adebisi";
 import Afolabi from "./pages/Leadership/Afolabi";
 import Eyo from "./pages/Leadership/Eyo"
+import Engineering from './pages/OurInvestments/EngineeringAndConstruction'
 
 function App() {
   const [isMenuOut, setIsMenuOut] = useState(false);
@@ -114,7 +115,7 @@ function App() {
       subNav: [
         {
           name: "Engineering & Construction",
-          to: "engineering-and-construction",
+          to: "our-investments/engineering-and-construction",
         },
         {
           name: "Real estate",
@@ -217,6 +218,7 @@ function App() {
               element={<Eyo />}
             />
           </Route>
+          <Route path="/our-investments/engineering-and-construction" element={<Engineering />} />
         </Routes>
         <Footer />
       </Router>

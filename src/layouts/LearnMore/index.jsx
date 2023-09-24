@@ -53,6 +53,7 @@ export default function LearnMore() {
         <h1
           className="text-white text-[20px] md:text-[28px] lg:text-[40px] leading-[1] font-[600] text-center mb-[20px] md:mb-[30px]"
           ref={mainTextRef}
+          style={{ fontFamily: "Playfair Display, serif" }}
         >
           A consolidated and Diversified Investment Holding Company
         </h1>
