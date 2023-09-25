@@ -6,7 +6,7 @@ import Hero3 from "./assets/images/hero-3.jpg";
 import EngineeringConstruction from "./assets/images/construction-biz.jpg";
 import RealEstate from "./assets/images/real-estate-biz.jpg";
 import TelecommunicationTechnology from "./assets/images/telecoms-biz.jpg";
-import Aviation from "./assets/images/aviation-biz.jpg";
+import AviationImg from "./assets/images/aviation-biz.jpg";
 import Mining from "./assets/images/mining-biz.jpg";
 import Footer from "./layouts/Footer";
 import WhoWeAre from "./pages/WhoWeAre";
@@ -16,9 +16,10 @@ import Leadership from "./pages/Leadership";
 import SirKesington from "./pages/Leadership/SirKesington";
 import Adebisi from "./pages/Leadership/Adebisi";
 import Afolabi from "./pages/Leadership/Afolabi";
-import Eyo from "./pages/Leadership/Eyo"
-import Engineering from './pages/OurInvestments/EngineeringAndConstruction'
-import RealEstates from './pages/OurInvestments/RealEstate'
+import Eyo from "./pages/Leadership/Eyo";
+import Engineering from "./pages/OurInvestments/EngineeringAndConstruction";
+import RealEstates from "./pages/OurInvestments/RealEstate";
+import Aviation from "./pages/OurInvestments/Aviation";
 
 function App() {
   const [isMenuOut, setIsMenuOut] = useState(false);
@@ -62,7 +63,7 @@ function App() {
       to: "manufacturing",
     },
     {
-      img: Aviation,
+      img: AviationImg,
       sector: "Aviation",
       comment: "Creating A Better Travel Experience",
       to: "aviation",
@@ -116,35 +117,35 @@ function App() {
       subNav: [
         {
           name: "Engineering & Construction",
-          to: "our-investments/engineering-and-construction",
+          to: "/our-investments/engineering-and-construction",
         },
         {
           name: "Real estate",
-          to: "our-investments/real-estate",
+          to: "/our-investments/real-estate",
         },
         {
           name: "Telecommunications & Technology",
-          to: "telecommunications-and-technology",
+          to: "/telecommunications-and-technology",
         },
         {
           name: "Manufacturing",
-          to: "manufacturing",
+          to: "/manufacturing",
         },
         {
           name: "Aviation",
-          to: "aviation",
+          to: "/our-investments/aviation",
         },
         {
           name: "Mining",
-          to: "mining",
+          to: "/mining",
         },
         {
           name: "Healthcare",
-          to: "healthcare",
+          to: "/healthcare",
         },
         {
           name: "Trading",
-          to: "trading",
+          to: "/trading",
         },
       ],
     },
@@ -206,21 +207,19 @@ function App() {
               path="/leadership/sir-kesington"
               element={<SirKesington />}
             />
-            <Route
-              path="/leadership/adebisi"
-              element={<Adebisi />}
-            />
-            <Route
-              path="/leadership/afolabi"
-              element={<Afolabi />}
-            />
-            <Route
-              path="/leadership/eyo"
-              element={<Eyo />}
-            />
+            <Route path="/leadership/adebisi" element={<Adebisi />} />
+            <Route path="/leadership/afolabi" element={<Afolabi />} />
+            <Route path="/leadership/eyo" element={<Eyo />} />
           </Route>
-          <Route path="/our-investments/engineering-and-construction" element={<Engineering />} />
-          <Route path="/our-investments/real-estate" element={<RealEstates />} />
+          <Route
+            path="/our-investments/engineering-and-construction"
+            element={<Engineering />}
+          />
+          <Route
+            path="/our-investments/real-estate"
+            element={<RealEstates />}
+          />
+          <Route path="/our-investments/aviation" element={<Aviation />} />
         </Routes>
         <Footer />
       </Router>
