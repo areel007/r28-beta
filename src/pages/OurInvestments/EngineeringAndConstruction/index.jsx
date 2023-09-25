@@ -1,5 +1,6 @@
 import OtherPageHero from "../../../layouts/OtherPageHero";
 import HeroImg from "../../../assets/images/construction-hero.jpg";
+import Businesses from "../../../layouts/Businesses";
 
 export default function () {
   const heroContent = {

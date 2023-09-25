@@ -11,3 +11,23 @@
   transition: all .6s ease;
   transform: translateY(0);
 }
+
+.other__hero__text {
+  width: 90%;
+  max-width: 1500px;
+  height: calc(100% - 139.479px);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 100px;
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  align-items: center;
+  z-index: 100;
+}
+
+@media screen and (max-width: 1024px) {
+  .other__hero__text {
+    height: calc(100% - 99.479px);
+  }
+}

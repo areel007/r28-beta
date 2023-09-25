@@ -18,6 +18,7 @@ import Adebisi from "./pages/Leadership/Adebisi";
 import Afolabi from "./pages/Leadership/Afolabi";
 import Eyo from "./pages/Leadership/Eyo"
 import Engineering from './pages/OurInvestments/EngineeringAndConstruction'
+import RealEstates from './pages/OurInvestments/RealEstate'
 
 function App() {
   const [isMenuOut, setIsMenuOut] = useState(false);
@@ -119,7 +120,7 @@ function App() {
         },
         {
           name: "Real estate",
-          to: "real-estate",
+          to: "our-investments/real-estate",
         },
         {
           name: "Telecommunications & Technology",
@@ -219,6 +220,7 @@ function App() {
             />
           </Route>
           <Route path="/our-investments/engineering-and-construction" element={<Engineering />} />
+          <Route path="/our-investments/real-estate" element={<RealEstates />} />
         </Routes>
         <Footer />
       </Router>

@@ -10,15 +10,15 @@ function OtherPageHero({ heroContent }) {
         className="absolute top-0 w-full h-full object-cover"
       />
       <div className="absolute top-0 left-0 z-[8] bg-black w-full h-full opacity-[.4]"></div>
-      <div className="relative w-full h-full relative z-[9]">
-        <div className="w-[90%] xl:w-[900px] mx-auto flex items-center h-[calc(100%_-_99.479px)] md:h-[calc(100%_-_139.479px)] relative">
-          <h1
-            className="mt-[-100px] md:mt-[-200px] text-white text-[24px] md:text-[40px] lg:text-[60px] leading-[1] font-[700]"
-            style={{ fontFamily: "Playfair Display, serif" }}
-          >
-            {heroContent.text}
-          </h1>
-        </div>
+
+      <div className="other__hero__text">
+        <div className="w-[60px] hidden lg:block"></div>
+        <h1
+          className="mt-[-100px] md:mt-[-200px] text-white text-[24px] md:text-[40px] lg:text-[60px] leading-[1] font-[700]"
+          style={{ fontFamily: "Playfair Display, serif" }}
+        >
+          {heroContent.text}
+        </h1>
       </div>
     </div>
   );

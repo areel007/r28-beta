@@ -25,9 +25,15 @@
 }
 
 .carousel__text {
-  width: 90%;
+  /* width: 90%;
   max-width: 900px;
+  height: 100%; */
+  width: 90%;
+  max-width: 1500px;
   height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 100px;
   position: relative;
   margin: 0 auto;
   top: 0;
@@ -40,5 +46,11 @@
 
 .hero__1 {
   overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel__text {
+    grid-template-columns: 1fr;
+  }
 }
 

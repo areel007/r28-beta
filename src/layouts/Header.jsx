@@ -7,7 +7,6 @@ import MobileMenu from "../components/MobileMenu";
 import Twitter from "../components/Twitter";
 import LinkedIn from "../components/LinkedIn";
 
-
 export default function Header({
   handleOpenMobileMenu,
   navigations,
@@ -29,17 +28,14 @@ export default function Header({
         mobileSubNav={mobileSubNav}
         handleBack={handleBack}
       />
-      <div className="w-[90%] 2xl:w-[1500px] mx-auto flex justify-between items-center">
-        <div className="flex items-center gap-[100px]">
-          <Logo />
-          <Navigation navigations={navigations} />
-        </div>
+      <div className="w-[90%] 2xl:w-[1500px] mx-auto grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr_auto] gap-[100px] items-center justify-items-end lg:justify-items-start">
+        <Logo />
+        <Navigation navigations={navigations} />
         {!isMobileMenuOut ? (
           <Hamburger handleOpenMobileMenu={handleOpenMobileMenu} />
         ) : null}
         <div className="hidden lg:flex gap-[10px] items-center">
-          <Twitter />
-          <LinkedIn />
+          <Twitter color={'white'} />
         </div>
       </div>
     </header>
@@ -54,5 +50,5 @@ Header.propTypes = {
   step: PropTypes.number,
   handleChooseStep: PropTypes.func,
   mobileSubNav: PropTypes.array,
-  handleBack: PropTypes.func
+  handleBack: PropTypes.func,
 };

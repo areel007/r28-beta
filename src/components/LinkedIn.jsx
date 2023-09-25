@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function LinkedIn() {
   return (
     <a href="https://linkedin.com">
@@ -7,3 +9,7 @@ export default function LinkedIn() {
     </a>
   );
 }
+
+// LinkedIn.propTypes = {
+//   color: PropTypes.string
+// }

@@ -23,9 +23,9 @@ function MobileMenu({
         {step > 1 ? <Back handleBack={handleBack} /> : null}
         <Cancel handleCloseMobileMenu={handleCloseMobileMenu} />
       </div>
-      <div className="w-[90%] mx-auto mt-[80px] p-[20px] bg-dark-grey shadow">
+      <div className="w-[90%] mx-auto mt-[80px] p-[20px] bg-white shadow">
         {step == 1 ? (
-          <div className="flex flex-col gap-[20px] text-[12px] uppercase text-white">
+          <div className="flex flex-col gap-[20px] text-[12px] uppercase text-dark-gray">
             {navigations.map((nav, i) => {
               return nav.subNav ? (
                 <span key={i} onClick={() => handleChooseStep(nav.subNav)}>
@@ -39,7 +39,7 @@ function MobileMenu({
             })}
           </div>
         ) : (
-          <div className="flex flex-col gap-[20px] text-[12px] uppercase text-white">
+          <div className="flex flex-col gap-[20px] text-[12px] uppercase text-dark-gray">
             {mobileSubNav.map((subNav, idx) => {
               return (
                 <a href={subNav.to} key={idx}>
@@ -50,8 +50,7 @@ function MobileMenu({
           </div>
         )}
         <div className="flex gap-[10px] items-center mt-[20px]">
-          <Twitter />
-          <LinkedIn />
+          <Twitter color={'#3d3d3c'} />
         </div>
       </div>
     </nav>

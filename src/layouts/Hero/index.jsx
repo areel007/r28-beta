@@ -35,8 +35,9 @@ export default function Hero({ sliders }) {
                 className="w-full h-full object-cover absolute"
               />
               <div className={style.carousel__text}>
-                <div className="h-[99.479px] md:h-[139.479px]"></div>
-                <div className="w-full h-[calc(100%_-_99.479px)] md:h-[calc(100%_-_139.479px)] flex items-center">
+                <div className="h-[99.479px] md:h-[139.479px] hidden lg:block"></div>
+                <div className="w-full h-[calc(100%_-_99.479px)] md:h-[calc(100%_-_139.479px)] flex items-center relative top-[99.479px] lg:top-[139.479px]">
+                  <div className="w-[60px] hidden lg:block"></div>
                   <h1
                     className="mt-[-100px] md:mt-[-200px] text-white text-[24px] md:text-[40px] lg:text-[60px] leading-[1] font-[700]"
                     style={{ fontFamily: "Playfair Display, serif" }}
