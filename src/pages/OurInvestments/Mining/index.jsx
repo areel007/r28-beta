@@ -1,11 +1,18 @@
 import OtherPageHero from "../../../layouts/OtherPageHero";
 import HeroImg from "../../../assets/images/mining-biz.jpg";
+import { useEffect } from "react";
 
-export default function index() {
+export default function Mining() {
   const heroContent = {
     text: "Mining",
     img: HeroImg,
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
 
   return (
     <>

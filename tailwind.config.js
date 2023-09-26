@@ -12,9 +12,16 @@ export default {
         'primary-color': '#482122'
       },
       screens: {
-        'slg': '800px',
+        'sxl': '1121px',
+        'ssxl': '1060px',
+        'slg': '844px',
+        'bmd': '844px',
         'smd': '639px',
+        'ssmd': '570px',
         'mb': '460px'
+      },
+      backgroundImage: {
+        'board-room': "url('./src/assets/images/boardroom.jpg')"
       }
     },
   },

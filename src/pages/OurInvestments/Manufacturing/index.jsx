@@ -1,11 +1,17 @@
 import OtherPageHero from "../../../layouts/OtherPageHero";
 import HeroImg from "../../../assets/images/";
+import { useEffect } from "react";
 
 export default function Manufacturing() {
   const heroContent = {
     text: "Manufacturing",
     img: HeroImg,
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
 
   return (
     <>

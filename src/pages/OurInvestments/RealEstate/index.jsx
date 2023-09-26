@@ -1,11 +1,17 @@
 import OtherPageHero from "../../../layouts/OtherPageHero";
 import HeroImg from "../../../assets/images/real-estate-biz.jpg";
+import { useEffect } from "react";
 
 export default function RealEstate() {
   const heroContent = {
     text: "Real Estate",
     img: HeroImg,
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <OtherPageHero heroContent={heroContent} />

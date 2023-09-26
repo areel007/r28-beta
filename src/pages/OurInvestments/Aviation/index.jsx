@@ -1,11 +1,17 @@
 import OtherPageHero from "../../../layouts/OtherPageHero";
 import HeroImg from "../../../assets/images/aviation-biz.jpg";
+import { useEffect } from "react";
 
 export default function Aviation() {
   const heroContent = {
     text: "Aviation",
     img: HeroImg,
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <OtherPageHero heroContent={heroContent} />

@@ -39,7 +39,7 @@ export default function Hero({ sliders }) {
                 <div className="w-full h-[calc(100%_-_99.479px)] md:h-[calc(100%_-_139.479px)] flex items-center relative top-[99.479px] lg:top-[139.479px]">
                   <div className="w-[60px] hidden lg:block"></div>
                   <h1
-                    className="mt-[-100px] md:mt-[-200px] text-white text-[24px] md:text-[40px] lg:text-[60px] leading-[1] font-[700]"
+                    className="mt-[-100px] md:mt-[-200px] text-white text-[24px] md:text-[40px] lg:text-[60px] 2xl:text-[80px] leading-[1] font-[700]"
                     style={{ fontFamily: "Playfair Display, serif" }}
                   >
                     {slider.text.split(" ").slice(0, 3).join(" ")} <br />

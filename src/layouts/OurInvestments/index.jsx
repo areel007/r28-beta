@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function OurInvestments({ investments }) {
   return (
     <div className="py-[40px] md:py-[60px] lg:py-[100px] bg-white">
-      <div className="w-[90%] lg:w-[800px] mx-auto mb-[50px] md:mb-[100px]">
+      <div className="w-[90%] lg:w-[800px] mx-auto mb-[50px] lg:mb-[100px]">
         <h3 className="text-[14px] md:text-[16px] uppercase text-primary-color text-center font-[500] tracking-[4px] mb-[20px] md:mb-[30px]">
           Our investments
         </h3>
@@ -17,13 +17,13 @@ export default function OurInvestments({ investments }) {
         </p>
       </div>
 
-      <div className="w-[90%] lg:w-[80%] xl:w-[1100px] mx-auto relative z-[0]">
-        <div className="grid mb:grid-cols-2 slg:grid-cols-3  xl:grid-cols-4 gap-[5px]">
+      <div className="w-[90%] slg:w-[828.75px] xl:w-[1100px] mx-auto relative z-[0]">
+        <div className="grid grid-cols-[271.25px] smd:grid-cols-[271.25px_271.25px] slg:grid-cols-[271.25px_271.25px_271.25px]  xl:grid-cols-[271.25px_271.25px_271.25px_271.25px] gap-[5px] justify-center">
           {investments.map((investment, index) => {
             return (
               <Link
                 to={investment.to}
-                className="w-full h-[350px] 2xl:h-[400px] relative group cursor-pointer"
+                className="w-full h-[350px] 2xl:h-[350px] relative group cursor-pointer"
                 key={index}
               >
                 <div className="absolute bg-black top-0 left-0 w-full h-full opacity-[.5] group-hover:opacity-[.7] cursor-pointer z-[10]"></div>

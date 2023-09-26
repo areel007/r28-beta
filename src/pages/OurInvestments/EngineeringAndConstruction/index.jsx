@@ -1,12 +1,17 @@
 import OtherPageHero from "../../../layouts/OtherPageHero";
 import HeroImg from "../../../assets/images/construction-hero.jpg";
-import Businesses from "../../../layouts/Businesses";
+// import Businesses from "../../../layouts/Businesses";
+import { useEffect } from "react";
 
-export default function () {
+export default function EngineeringAndConstruction () {
   const heroContent = {
     text: "Engineering & Construction",
     img: HeroImg,
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>

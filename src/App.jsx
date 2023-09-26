@@ -206,15 +206,14 @@ function App() {
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/our-culture" element={<OurCulture />} />
           <Route path="/our-approach" element={<OurApproach />} />
-          <Route path="/leadership" element={<Leadership />}>
-            <Route
+          <Route path="/leadership" element={<Leadership />}></Route>
+          <Route
               path="/leadership/sir-kesington"
               element={<SirKesington />}
             />
             <Route path="/leadership/adebisi" element={<Adebisi />} />
             <Route path="/leadership/afolabi" element={<Afolabi />} />
             <Route path="/leadership/eyo" element={<Eyo />} />
-          </Route>
           <Route
             path="/our-investments/engineering-and-construction"
             element={<Engineering />}

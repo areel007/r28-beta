@@ -1,11 +1,17 @@
 import OtherPageHero from "../../../layouts/OtherPageHero";
 import HeroImg from "../../../assets/images/telecoms-biz.jpg";
+import { useEffect } from "react";
 
 export default function TelecomsAndTech() {
   const heroContent = {
     text: "Telecommunications & Technology",
     img: HeroImg,
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <OtherPageHero heroContent={heroContent} />
@@ -39,8 +45,8 @@ export default function TelecomsAndTech() {
                 quality, cost-effective support services and innovative products
                 to leading telecommunications companies in Nigeria. <br />
                 <br />
-                We acquire, develop and deploy resources in order to deliver
-                the best possible quality in service for the telecommunications
+                We acquire, develop and deploy resources in order to deliver the
+                best possible quality in service for the telecommunications
                 industry.
               </p>
             </div>

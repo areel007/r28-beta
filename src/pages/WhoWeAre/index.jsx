@@ -12,7 +12,7 @@ export default function WhoWeAre() {
       <div className="w-full py-[40px] md:py-[100px] bg-white">
         <div className="w-[90%] lg:w-[900px] mx-auto">
           <p
-            className="text-primary-color text-[24px] md:text-[32px] leading-[1.2] w-[100%] lg:w-[800px]"
+            className="text-primary-color text-[24px] md:text-[32px] leading-[1.2] w-[100%] lg:w-[750px]"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
             Established in 2007, R28 Limited is a consolidated and diversified
@@ -20,7 +20,7 @@ export default function WhoWeAre() {
             in various sectors of the Nigerian economy.
           </p>
 
-          <div className="w-full lg:w-[800px] mt-[30px] md:mt-[50px]">
+          <div className="w-full lg:w-[750px] mt-[30px] md:mt-[50px]">
             <p className="text-[14px] md:text-[16px] leading-[1.6]">
               The company is continuously identifying and developing profitable
               investment opportunities to transform communities through job

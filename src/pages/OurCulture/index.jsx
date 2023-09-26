@@ -11,7 +11,7 @@ export default function OurCulture() {
       <OtherPageHero heroContent={heroContent} />
       <div className="w-full py-[40px] md:py-[100px] bg-white">
         <div className="w-[90%] lg:w-[900px] mx-auto">
-          <div className="grid grid-cols-[1] md:grid-cols-[300px_1fr] gap-[20px] lg:gap-[40px]">
+          <div className="grid grid-cols-[1] gap-[20px] lg:gap-[40px]">
             <p
               className="text-primary-color text-[24px] md:text-[38px] leading-[1]"
               style={{ fontFamily: "Playfair Display, serif" }}
