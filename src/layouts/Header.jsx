@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
+import { useLocation } from "react-router-dom";
 
 import Logo from "../components/Logo";
 import Navigation from "../components/Navigations";
 import Hamburger from "../components/Hamburger";
 import MobileMenu from "../components/MobileMenu";
 import Twitter from "../components/Twitter";
-import LinkedIn from "../components/LinkedIn";
+// import LinkedIn from "../components/LinkedIn";
 
 export default function Header({
   handleOpenMobileMenu,
@@ -17,8 +18,10 @@ export default function Header({
   mobileSubNav,
   handleBack,
 }) {
+  const location = useLocation()
+  console.log(location.pathname);
   return (
-    <header className="w-full py-[30px] absolute top-0 left-0 z-[10]">
+    <header className={`w-full py-[30px] absolute top-0 left-0 z-[10] ${location.pathname==='/contact'?'bg-primary-color':'bg-transparent'}`}>
       <MobileMenu
         navigations={navigations}
         handleCloseMobileMenu={handleCloseMobileMenu}

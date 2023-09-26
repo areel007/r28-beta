@@ -7,7 +7,7 @@ import EngineeringConstruction from "./assets/images/construction-biz.jpg";
 import RealEstate from "./assets/images/real-estate-biz.jpg";
 import TelecommunicationTechnology from "./assets/images/telecoms-biz.jpg";
 import AviationImg from "./assets/images/aviation-biz.jpg";
-import Mining from "./assets/images/mining-biz.jpg";
+import MiningImg from "./assets/images/mining-biz.jpg";
 import Footer from "./layouts/Footer";
 import WhoWeAre from "./pages/WhoWeAre";
 import OurCulture from "./pages/OurCulture";
@@ -20,6 +20,10 @@ import Eyo from "./pages/Leadership/Eyo";
 import Engineering from "./pages/OurInvestments/EngineeringAndConstruction";
 import RealEstates from "./pages/OurInvestments/RealEstate";
 import Aviation from "./pages/OurInvestments/Aviation";
+import TelecomsAndTech from "./pages/OurInvestments/TelecomsAndTech";
+import Mining from "./pages/OurInvestments/Mining"
+import StrategicAlliances from "./pages/StrategicAlliances";
+import Contact from "./pages/Contact";
 
 function App() {
   const [isMenuOut, setIsMenuOut] = useState(false);
@@ -42,49 +46,49 @@ function App() {
       img: EngineeringConstruction,
       sector: "Engineering & Construction",
       comment: "Time-Tested Engineering & Construction Solutions",
-      to: "engineering-and-construction",
+      to: "/our-investments/engineering-and-construction",
     },
     {
       img: RealEstate,
       sector: "Real Estate",
       comment: "Shaping Tomorrow's Communities",
-      to: "real-estate",
+      to: "/our-investments/real-estate",
     },
     {
       img: TelecommunicationTechnology,
       sector: "Telecommunications & Technology",
       comment: "Seamless Energy & Technological Support",
-      to: "telecommunication-and-technology",
+      to: "/our-investments/telecommunications-and-technology",
     },
     {
       img: EngineeringConstruction,
       sector: "Manufacturing",
       comment: "Setting Global Standards in Local Manufacturing Excellence",
-      to: "manufacturing",
+      to: "/our-investments/manufacturing",
     },
     {
       img: AviationImg,
       sector: "Aviation",
       comment: "Creating A Better Travel Experience",
-      to: "aviation",
+      to: "/our-investments/aviation",
     },
     {
-      img: Mining,
+      img: MiningImg,
       sector: "Mining",
       comment: "Extracting Sustainable Values",
-      to: "mining",
+      to: "/our-investments/mining",
     },
     {
       img: EngineeringConstruction,
       sector: "Healthcare",
       comment: "Shaping Tomorrow’s Communities",
-      to: "healthcare",
+      to: "/our-investments/healthcare",
     },
     {
       img: EngineeringConstruction,
       sector: "Trading",
       comment: "Superior Brands that Outperform",
-      to: "trading",
+      to: "/our-investments/trading",
     },
   ];
 
@@ -125,11 +129,11 @@ function App() {
         },
         {
           name: "Telecommunications & Technology",
-          to: "/telecommunications-and-technology",
+          to: "/our-investments/telecommunications-and-technology",
         },
         {
           name: "Manufacturing",
-          to: "/manufacturing",
+          to: "/our-investments/manufacturing",
         },
         {
           name: "Aviation",
@@ -137,15 +141,15 @@ function App() {
         },
         {
           name: "Mining",
-          to: "/mining",
+          to: "/our-investments/mining",
         },
         {
           name: "Healthcare",
-          to: "/healthcare",
+          to: "/our-investments/healthcare",
         },
         {
           name: "Trading",
-          to: "/trading",
+          to: "/our-investments/trading",
         },
       ],
     },
@@ -220,6 +224,13 @@ function App() {
             element={<RealEstates />}
           />
           <Route path="/our-investments/aviation" element={<Aviation />} />
+          <Route
+            path="/our-investments/telecommunications-and-technology"
+            element={<TelecomsAndTech />}
+          />
+          <Route path="/our-investments/mining" element={<Mining />} />
+          <Route path="/strategic-alliances" element={<StrategicAlliances />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

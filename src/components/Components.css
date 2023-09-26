@@ -29,5 +29,6 @@
 @media screen and (max-width: 1024px) {
   .other__hero__text {
     height: calc(100% - 99.479px);
+    grid-template-columns: 1fr;
   }
 }
