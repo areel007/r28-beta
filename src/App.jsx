@@ -21,7 +21,7 @@ import Engineering from "./pages/OurInvestments/EngineeringAndConstruction";
 import RealEstates from "./pages/OurInvestments/RealEstate";
 import Aviation from "./pages/OurInvestments/Aviation";
 import TelecomsAndTech from "./pages/OurInvestments/TelecomsAndTech";
-import Mining from "./pages/OurInvestments/Mining"
+import Mining from "./pages/OurInvestments/Mining";
 import StrategicAlliances from "./pages/StrategicAlliances";
 import Contact from "./pages/Contact";
 
@@ -207,13 +207,10 @@ function App() {
           <Route path="/our-culture" element={<OurCulture />} />
           <Route path="/our-approach" element={<OurApproach />} />
           <Route path="/leadership" element={<Leadership />}></Route>
-          <Route
-              path="/leadership/sir-kesington"
-              element={<SirKesington />}
-            />
-            <Route path="/leadership/adebisi" element={<Adebisi />} />
-            <Route path="/leadership/afolabi" element={<Afolabi />} />
-            <Route path="/leadership/eyo" element={<Eyo />} />
+          <Route path="/leadership/sir-kesington" element={<SirKesington />} />
+          <Route path="/leadership/adebisi" element={<Adebisi />} />
+          <Route path="/leadership/afolabi" element={<Afolabi />} />
+          <Route path="/leadership/eyo" element={<Eyo />} />
           <Route
             path="/our-investments/engineering-and-construction"
             element={<Engineering />}

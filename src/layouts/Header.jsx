@@ -18,10 +18,13 @@ export default function Header({
   mobileSubNav,
   handleBack,
 }) {
-  const location = useLocation()
-  console.log(location.pathname);
+  const location = useLocation();
   return (
-    <header className={`w-full py-[30px] absolute top-0 left-0 z-[10] ${location.pathname==='/contact'?'bg-primary-color':'bg-transparent'}`}>
+    <header
+      className={`w-full py-[30px] absolute top-0 left-0 z-[10] ${
+        location.pathname === "/contact" ? "bg-primary-color" : "bg-transparent"
+      }`}
+    >
       <MobileMenu
         navigations={navigations}
         handleCloseMobileMenu={handleCloseMobileMenu}
@@ -38,7 +41,7 @@ export default function Header({
           <Hamburger handleOpenMobileMenu={handleOpenMobileMenu} />
         ) : null}
         <div className="hidden lg:flex gap-[10px] items-center">
-          <Twitter color={'white'} />
+          <Twitter color={"white"} />
         </div>
       </div>
     </header>
